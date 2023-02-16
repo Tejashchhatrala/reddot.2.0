@@ -180,6 +180,71 @@
   <main class="content">
     <!-- section home -->
     <section id="home" class="home d-flex align-items-center">
+
+
+
+      <div id="ms-story-player2df6b9ff6955">
+        <style>
+          #mss3 * {
+            box-sizing: border-box;
+          }
+
+          .mpsa {
+            scroll-behavior: smooth;
+            display: flex;
+            flex-wrap: nowrap;
+            max-width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 15px;
+            height: auto
+          }
+
+          #mss3::-webkit-scrollbar {
+            width: 0;
+            height: 0
+          }
+
+          #mss3 .msmd::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 230px;
+            width: 100px;
+            background: linear-gradient(to right, #e6e6e6, rgba(255, 255, 255, 0.5), #e6e6e6);
+            overflow: hidden;
+            animation: shimmer 1.5s ease infinite;
+          }
+
+          @keyframes shimmer {
+            0% {
+              left: -150px
+            }
+
+            100% {
+              left: 150px
+            }
+          }
+
+          #mss3 .msmd {
+            position: relative;
+            margin: 0 13px 0 0;
+            min-width: 173px;
+            cursor: pointer;
+            height: 230px;
+            width: 173px;
+            border-radius: 15px;
+            background: #e6e6e6;
+            overflow: hidden
+          }
+        </style>
+        <div id="msfb"></div>
+        <script>document.querySelector("#msfb").innerHTML = `<div  id="mss3" class="mpsa"><div class="msmd "></div><div class="msmd "></div><div class="msmd "></div><div class="msmd "></div><div class="msmd "></div><div class="msmd "></div><div class="msmd "></div><div class="msmd "></div><div class="msmd "></div><div class="msmd "></div></div>`;</script>
+      </div>
+
+
+
       <div class="container">
         <!-- intro -->
         <div class="intro">
@@ -1200,9 +1265,9 @@
                 <a href="mailto:chhatralatejash@gmail.com">email</a>.
               </p>
               <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.171237037373!2d72.6713415153364!3d23.054182920930288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8746e6545ce3%3A0xb058ed2696693192!2sReddot%20Beauty%20by%20Feni%20Patel!5e0!3m2!1sen!2sin!4v1676278128223!5m2!1sen!2sin"
-              width="310" height="230" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.171237037373!2d72.6713415153364!3d23.054182920930288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8746e6545ce3%3A0xb058ed2696693192!2sReddot%20Beauty%20by%20Feni%20Patel!5e0!3m2!1sen!2sin!4v1676278128223!5m2!1sen!2sin"
+                width="310" height="230" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
 
@@ -1306,6 +1371,14 @@
   <script src="js/parallax.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/custom.js"></script>
+
+
+  <link href="https://cdn.ampproject.org/amp-story-player-v0.css" rel="stylesheet" type="text/css" />
+  <script async src="https://cdn.ampproject.org/amp-story-player-v0.js" ></script>
+  <script src="https://js.makestories.io/player/StoryPlayer.js"></script>
+  <script>let playerjhu = msPlayer({root: "#ms-story-player2df6b9ff6955",widgetId: "f3e7a6c5-7c81-4b9a-912c-2df6b9ff6955"});</script>
+  
+
 </body>
 
 </html>
